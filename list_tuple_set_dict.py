@@ -1,24 +1,32 @@
 # LIST 
-
-list = [1, 2, 3, 4, 5]
-list.append(6)
-list.remove(1)
-print(list) #[2, 3, 4, 5, 6]
-
-total = sum(list)
+print("------------ LIST --------------")
+numlist = [1, 2, 3, 4, 5]
+numlist.append(6)
+numlist.remove(1)
+print(numlist) #[2, 3, 4, 5, 6]
+total = sum(numlist)
 print(f"TOTAL:", total) #TOTAL: 20
-
-for n in list:
+for n in numlist:
     print(n) # print the list of numbers in line
 
+zillaList = list(("Dhaka", "Tangail", "Gazipur", "Sirjaganj")) #list constructor
+for zilla in zillaList:
+  print(zilla) 
+
+for item in range(2,3):
+   print(zillaList[item])
 
 # TUPLE
+print("------------ Tuple --------------")
 
 locations = {
     ("Paris", "France"): "Eiffel Tower",
     ("New York", "USA"): "Statue of Liberty"
 }
 
+print(locations[("Paris", "France")])
+print(locations.append({("New York", "USA"): "Statue of Liberty"}))
+# countryList = tuple(("Bangladesh", "Tangail", "Gazipur", "Sirjaganj")) #list constructor
 print(locations)
 
 # def modify_tuple(tupl, elem):
@@ -27,8 +35,9 @@ print(locations)
 #     back_to_tuple = tuple(list_with_new_elem)
 #     return back_to_tuple
 
-tuple = (1,2,3)
+numTuple = (1,2,3)
 add_element = 4
+
 # print(modify_tuple(tuple, add_element))
 
 #SET
